@@ -26,6 +26,7 @@ export default class DataGridComponent extends NestedArrayComponent {
       title: 'Data Grid',
       icon: 'th',
       group: 'data',
+      showPreview: false,
       documentation: '/userguide/forms/data-components#data-grid',
       weight: 30,
       schema: DataGridComponent.schema()

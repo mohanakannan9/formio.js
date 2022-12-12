@@ -13,7 +13,7 @@
   {% } %}
 </div>
 <div class="row">
-  <div class="col component-edit-tabs {% if (ctx.preview) { %}col-sm-6{% } else { %}col-sm-12{% } %}">
+  <div class="col component-edit-tabs {{ ctx.preview ? ctx.showPreview ? 'col-sm-6' : 'col-sm-8' : 'col-sm-12' }}">
     <div ref="editForm">
         {{ctx.editForm}}
     </div>
@@ -26,10 +26,11 @@
     {% } %}
   </div>
   {% if (ctx.preview) { %}
-  <div class="col col-sm-6">
+  <div class="col {{ctx.showPreview ? 'col-sm-6' : 'col-sm-4'}}">
     <div class="card panel preview-panel">
-      <div class="card-header">
-        <h4 class="card-title mb-0">{{ctx.t('Preview')}}</h4>
+      <div class="card-header form-preview" ref="previewButton">
+        <i class="{{ctx.iconClass(!ctx.showPreview ? 'toggle-left' : 'toggle-right')}} text-muted"></i>
+        <h4 class="card-title mb-0 d-inline">{{ctx.t('Preview')}}</h4>
       </div>
       <div class="card-body">
         <div class="component-preview" ref="preview">

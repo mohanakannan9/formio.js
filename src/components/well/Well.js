@@ -16,6 +16,7 @@ export default class WellComponent extends NestedComponent {
       title: 'Well',
       icon: 'square-o',
       group: 'layout',
+      showPreview: false,
       documentation: '/userguide/forms/layout-components#well',
       weight: 60,
       schema: WellComponent.schema()

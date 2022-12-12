@@ -27,6 +27,7 @@ export default class TabsComponent extends NestedComponent {
       group: 'layout',
       icon: 'folder-o',
       weight: 50,
+      showPreview: false,
       documentation: '/userguide/forms/layout-components#tabs',
       schema: TabsComponent.schema(),
     };

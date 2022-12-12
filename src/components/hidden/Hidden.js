@@ -15,6 +15,7 @@ export default class HiddenComponent extends Input {
       group: 'data',
       icon: 'user-secret',
       weight: 0,
+      showPreview: false,
       documentation: '/userguide/forms/form-components#hidden',
       schema: HiddenComponent.schema()
     };

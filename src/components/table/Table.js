@@ -41,6 +41,7 @@ export default class TableComponent extends NestedComponent {
       group: 'layout',
       icon: 'table',
       weight: 40,
+      showPreview: false,
       documentation: '/userguide/forms/layout-components#table',
       schema: TableComponent.schema()
     };
