@@ -16,7 +16,7 @@ export default {
       {
         label: 'Submit',
         showValidations: false,
-        dataGridLabel: false,
+        hideLabel: true,
         tableView: false,
         key: 'submit',
         type: 'button',
